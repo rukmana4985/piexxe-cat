@@ -1,0 +1,233 @@
+$important : !important
+$alice-blue : #f2f4f6
+$pattens-blue: #dbe3ec
+$light-grey : #F2F2F2
+$hawkes-blue : #d5dce7
+$grey : #757575
+$black : #4b514e
+$nav-font-size : 15px
+$bold : bold
+$orange : #d87503
+$font-jumb : 3rem
+$smoke : #f9efe6
+$uppercase : uppercase
+nav
+  //-webkit-box-shadow: none $important
+  //-moz-box-shadow: none $important
+  //box-shadow: none $important
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1)
+  ul li a
+    font-size: $nav-font-size $important
+    color: $black
+    text-transform: $uppercase
+
+nav ul li a:hover
+  background: none $important
+
+.bold
+  font-weight: $bold
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+
+li
+  display: inline-block
+  padding: 0 10px
+
+
+a
+  position: relative
+  display: block
+  cursor: pointer
+  padding: 8px 0
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+
+a:before, a:after
+  content: ''
+  position: absolute
+  width: 0%
+  height: 2px
+  bottom: 7px
+  background: #fff
+
+
+nav ul li a:before
+  left: 0
+
+nav ul li a:after
+  right: 0
+  background: #d87503
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)
+
+
+nav ul li a:hover:before
+  background: #d87503
+  width: 100%
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
+
+
+a:hover:after
+  background: transparent
+  width: 100%
+  transition: 0s
+.grey-text
+  color: $grey
+.black-text
+  color: $black
+.light-grey
+  background-color: $light-grey
+.orange-text
+  color: $orange
+.banner
+  background: linear-gradient(rgba(44, 56, 52, .5), rgba(44, 56, 52, .6)), url("../images/animal-avian-beak-416202.jpg") center no-repeat
+  background-size: cover
+  width: 100%
+  height: 650px
+.text-banner
+  position: absolute
+  margin-top: 15%
+  width: 100%
+  height: auto
+.left-banner
+  width: 50%
+  margin-left: 10%
+.jumbo
+  font-size: $font-jumb $important
+  color: $smoke $important
+  font-weight: 300
+.smoke-text
+  color: $smoke
+.uppercase
+  text-transform: $uppercase
+.btn-banner
+  font-size: 17px $important
+  background: #dd8707
+.btn-banner:hover, .btn-banner:focus
+  background: #dd8707
+.wha-we-do
+  position: relative
+  height: auto
+  padding-bottom: 50px
+  background: repeating-linear-gradient(-45deg,rgba(80, 89, 86, 0.1),rgba(235, 237, 237, 0.2) 1px,white 3px,white 10px)
+  .title
+    padding-top: 90px
+    color: #a4bda5
+    font-family: "Zilla Slab", Georgia, "Times New Roman", serif
+
+  .jumbo-subtitle
+    font-weight: 300 $important
+    font-size: 3rem
+    color: #1b2422
+    line-height: 1.4
+    margin: 0 auto 2rem
+
+
+.quotes
+  padding-top: 0
+  color: #4b514e
+  font-family: "Zilla Slab", Georgia, "Times New Roman", serif
+  font-size: 1.3rem $important
+  line-height: 1.8
+.team-discuss
+  background: linear-gradient(rgba(66, 82, 72, .8), rgba(44, 56, 52, .9)), url("../images/annie-spratt-604126-unsplash.jpg") center no-repeat
+  height: 500px
+  width: 100%
+  background-size: cover
+.page
+  background-color: white
+  width: 100%
+  height: 400px
+.card-lnr
+  cursor: pointer
+.lnr
+  display: inline-block
+  fill: currentColor
+  width: 5em
+  height: 5em
+  vertical-align: -0.05em
+  color: grey
+  color: #888888 $important
+.top-20
+  padding-top: 20px $important
+.radius-20
+  border-radius: 10px
+.tabs_item
+  display: none
+  padding: 30px 0
+
+  h4
+    font-weight: bold
+    color: #4B514E
+    font-size: 1.4rem
+    margin: 0 0 1rem
+    text-transform: $uppercase
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif
+
+  img
+    width: 300px
+    float: left
+    margin-right: 30px
+
+  p
+    color: #6f9078
+    font-family: "Zilla Slab", Georgia, "Times New Roman", serif
+    font-size: 1.3rem
+    &:first-child
+      display: block
+
+.tabs
+  display: table
+  position: relative
+  overflow: hidden
+  margin: 0
+  width: 100%
+.team-laptop
+  background: linear-gradient(rgba(66, 82, 72, .8), rgba(44, 56, 52, .9)), url("../images/adults-computer-discussion-1036641.jpg") center no-repeat
+  width: 100%
+  height: 400px
+  background-size: cover
+.title-article
+  font-size: 1.3rem
+  color: $black
+.article-text
+  color: #6f9078
+  font-family: "Zilla Slab", Georgia, "Times New Roman", serif
+  font-size: 1.2rem
+  line-height: 1.8
+  margin-bottom: 1rem
+.svg-discovery
+  max-height: 600px
+.img-team
+  width: 150px
+  height: 150px
+  display: inline-block
+  border-radius: 100%
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  border: 7px solid $light-grey
+.text-team
+  font-family: "Zilla Slab", Georgia, "Times New Roman", serif
+  color: #4b514e $important
+  font-size: 1.2rem
+  line-height: 1.8
+  margin-bottom: 1rem
+.blog
+  width: 100%
+  height: 500px
+  background: $alice-blue
+  background-size: cover
+
+.title-blog
+  font-size: 1.3rem
+  font-weight: 300
+  letter-spacing: .1em
+.text-blog
+  font-size: 1.1rem $important
+  font-weight: 300
